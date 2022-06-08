@@ -1,0 +1,4 @@
+# ID_CDROM_MEDIA_BD = Bluray
+# ID_CDROM_MEDIA_DVD = DVD
+# ID_CDROM_MEDIA_CD = CD
+ACTION=="change", SUBSYSTEM=="block", KERNEL=="sr[0-9]*", RUN+="/bin/su -s /bin/sh -c '/opt/automatic-ripping-machine/scripts/arm.sh %k' arm"
